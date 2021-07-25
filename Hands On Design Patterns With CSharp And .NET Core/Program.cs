@@ -128,7 +128,6 @@ namespace Hands_On_Design_Patterns_With_CSharp_And_.NET_Core
                 var detailer = new Detailer();
                 var wheels = new WheelSpecialist();
                 var qc = new QualityControl();
-
                 qc.SetNextServiceHandler(detailer);
                 wheels.SetNextServiceHandler(qc);
                 mechanic.SetNextServiceHandler(wheels);
